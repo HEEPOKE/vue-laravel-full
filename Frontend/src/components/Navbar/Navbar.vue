@@ -22,15 +22,31 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Store</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
           </ul>
+          <form class="d-flex mx-3" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
           <nav>
-            <div class="Auth-button">
-              <button class="btn btn-primary col-auto mx-2">Login</button>
-              <button class="btn btn-primary col-auto">Register</button>
-            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Register</a
+                >
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
