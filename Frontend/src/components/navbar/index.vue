@@ -60,6 +60,3 @@ export default {
   name: "NavbarVue",
 };
 </script>
-<script setup>
-import LoginModalVue from "../modals/LoginModal.vue";
-</script>

@@ -1,20 +1,20 @@
 <template>
   <div class="normal-case tracking-normal">
     <a
-      href="/#login"
+      href="/#register"
       @click.prevent="show"
       class="text-copy-primary uppercase hover:text-gray-600"
-      >Login</a
+      >Register</a
     >
     <modal
-      name="modal-login"
+      name="modal-register"
       @opened="opened"
       :adaptive="true"
-      :height="440"
+      :height="460"
       :width="400"
     >
       <div class="px-10 py-8">
-        <h2 class="mb-4 uppercase tracking-wide text-xl">Login</h2>
+        <h2 class="mb-4 uppercase tracking-wide text-xl">Register</h2>
         <form action="#" method="post">
           <div class="form-group mb-4">
             <label
@@ -45,29 +45,36 @@
             />
           </div>
           <div class="form-group mb-8">
-            <label class="text-sm font-normal"
-              ><input type="checkbox" name="remember" class="mr-2" />Keep me
-              signed in</label
+            <label
+              for="confirm_password"
+              class="block font-normal uppercase tracking-wide text-xs mb-1"
+              >Confirm Password</label
             >
+            <input
+              type="password"
+              id="confirm_password"
+              name="confirm_password"
+              class="border px-4 py-2 w-full rounded bg-gray-200"
+            />
           </div>
           <div class="form-group mb-4">
             <button
               type="submit"
               class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded w-full"
             >
-              Login
+              Register
             </button>
           </div>
         </form>
         <div class="text-sm font-normal text-center">
           <p>
-            Don't have an account?
+            Already have an account?
             <a
               href="#"
               class="text-blue-600 hover:text-blue-800"
-              @click.prevent="showRegister"
+              @click.prevent="showLogin"
               @keydown.tab.exact.prevent=""
-              >Register</a
+              >Login</a
             >
           </p>
         </div>
@@ -78,20 +85,20 @@
 
 <script>
 export default {
-  name: "LoginModalVue",
+  name: "RegisterModal",
   methods: {
     show() {
-      this.$modal.show("modal-login");
-    },
-    showRegister() {
       this.$modal.show("modal-register");
-      this.$modal.hide("modal-login");
+    },
+    showLogin() {
+      this.$modal.show("modal-login");
+      this.$modal.hide("modal-register");
     },
     opened() {
       this.$refs.email.focus();
     },
     hide() {
-      this.$modal.hide("modal-login");
+      this.$modal.hide("modal-register");
     },
   },
 };
