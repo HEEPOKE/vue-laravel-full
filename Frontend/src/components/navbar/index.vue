@@ -1,62 +1,53 @@
 <template>
-  <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
-    <div class="flex justify-between items-center">
-      <span class="text-2xl font-[Poppins] cursor-pointer">tailwind</span>
-      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-      </span>
-    </div>
-
-    <ul
-      class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+  <div class="bg-indigo-600">
+    <nav
+      class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center"
     >
-      <li class="mx-4 my-6 md:my-0">
-        <a
-          href="#"
-          class="text-2xl font-extrabold hover:text-cyan-500 duration-500"
-          >HOME</a
-        >
-      </li>
-      <li class="mx-4 my-6 md:my-0">
-        <a
-          href="#"
-          class="text-2xl font-extrabold hover:text-cyan-500 duration-500"
-          >SERVICE</a
-        >
-      </li>
-      <li class="mx-4 my-6 md:my-0">
-        <a
-          href="#"
-          class="text-2xl font-extrabold hover:text-cyan-500 duration-500"
-          >ABOUT</a
-        >
-      </li>
-      <li class="mx-4 my-6 md:my-0">
-        <a
-          href="#"
-          class="text-2xl font-extrabold hover:text-cyan-500 duration-500"
-          >CONTACT</a
-        >
-      </li>
-      <li class="mx-4 my-6 md:my-0">
-        <a
-          href="#"
-          class="text-2xl font-extrabold hover:text-cyan-500 duration-500"
-          >BLOG'S</a
-        >
-      </li>
+      <div class="flex items-center justify-between">
+        <router-link
+          to="/"
+          class="text-xl font-bold text-gray-100 md:text-2xl hover:text-indigo-400"
+          >Logo
+        </router-link>
+        <!-- Mobile menu button -->
+        <div @click="toggleNav" class="flex md:hidden">
+          <button
+            type="button"
+            class="text-gray-100 hover:text-gray-400 focus:outline-none focus:text-gray-400"
+          >
+            <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+              <path
+                fill-rule="evenodd"
+                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
 
-      <button
-        class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded"
+      <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+      <ul
+        :class="showMenu ? 'flex' : 'hidden'"
+        class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
       >
-        Get started
-      </button>
-      <h2 class=""></h2>
-    </ul>
-  </nav>
+        <li class="text-gray-100 hover:text-indigo-400">Home</li>
+        <li class="text-gray-100 hover:text-indigo-400">About</li>
+        <li class="text-gray-100 hover:text-indigo-400">Blogs</li>
+        <li class="text-gray-100 hover:text-indigo-400">Contact Us</li>
+      </ul>
+    </nav>
+  </div>
 </template>
+
 <script>
+import { ref } from "vue";
+
 export default {
   name: "NavbarVue",
+  setup() {
+    let showMenu = ref(false);
+    const toggleNav = () => (showMenu.value = !showMenu.value);
+    return { showMenu, toggleNav };
+  },
 };
 </script>
