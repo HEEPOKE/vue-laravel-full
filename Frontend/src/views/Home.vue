@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import NavbarVue from "../components/navbar/Navbar.vue";
+import NavbarVue from "../components/navbar/index.vue";
 </script>
 
 <script>
