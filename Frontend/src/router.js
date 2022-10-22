@@ -1,33 +1,48 @@
-import HomeVue from "../../views/Home.vue";
-import AboutVue from "../../views/About.vue";
-import StoreVue from "../../views/Store.vue";
-import LoginVue from "../../views/auth/Login.vue";
-import RegisterVue from "../../views/auth/Register.vue";
-import DashboardVue from "../../views/Dashboard.vue";
-import NotFound from "../../errors/NotFound.vue";
+import { createRouter, createWebHistory } from 'vue-router';
+import HomeVue from "./views/Home.vue";
+import AboutVue from "./views/About.vue";
+import StoreVue from "./views/Store.vue";
+import LoginVue from "./views/auth/Login.vue";
+import RegisterVue from "./views/auth/Register.vue";
+import DashboardVue from "./views/Dashboard.vue";
+import NotFound from "./errors/NotFound.vue";
 
-const routes = {
-  "/": HomeVue,
-  "/about": AboutVue,
-  "/store": StoreVue,
-  "/login": LoginVue,
-  "/register": RegisterVue,
-  "/dashboard": DashboardVue,
-};
-export default {
-  data() {
-    return {
-      currentPath: window.location.hash,
-    };
+const routes = [
+  {
+    path: '/',
+    name: 'HomeVue',
+    component: HomeVue
   },
-  computed: {
-    currentView() {
-      return routes[this.currentPath.slice(1) || "/"] || NotFound;
-    },
+  {
+    path: '/about',
+    name: 'AboutVue',
+    component: AboutVue
   },
-  mounted() {
-    window.addEventListener("hashchange", () => {
-      this.currentPath = window.location.hash;
-    });
+  {
+    path: '/store',
+    name: 'StoreVue',
+    component: StoreVue
   },
-};
+  {
+    path: '/dashboard',
+    name: 'DashboardVue',
+    component: DashboardVue
+  },
+  {
+    path: '/login',
+    name: 'LoginVue',
+    component: LoginVue
+  },
+  {
+    path: '/register',
+    name: 'RegisterVue',
+    component: RegisterVue
+  },
+];
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+});
+      
+export default router;
