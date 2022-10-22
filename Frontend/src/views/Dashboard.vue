@@ -1,8 +1,10 @@
-<template>
-  <div></div>
+<template lang="">
+    <div>
+        
+    </div>
 </template>
 <script>
 export default {
-  name: 'LoginVue',
+
 };
 </script>
