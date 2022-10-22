@@ -39,22 +39,25 @@
 </template>
 
 <script>
-import Home from "../../views/Home.vue";
-import About from "../../views/About.vue";
-import Store from "../../views/Store.vue";
+import HomeVue from "../../views/Home.vue";
+import AboutVue from "../../views/About.vue";
+import StoreVue from "../../views/Store.vue";
 import LoginVue from "../../views/auth/Login.vue";
-import Register from "../../views/auth/Register.vue";
+import RegisterVue from "../../views/auth/Register.vue";
+import DashboardVue from "../../views/Dashboard.vue";
 import NotFound from "../../errors/NotFound.vue";
 
 const routes = {
-  "/": Home,
-  "/about": About,
-  "/store": Store,
+  "/": HomeVue,
+  "/about": AboutVue,
+  "/store": StoreVue,
   "/login": LoginVue,
-  "/register": Register,
+  "/register": RegisterVue,
+  "/dashboard": DashboardVue,
 };
 
 export default {
+  name: 'NavbarMenu',
   data() {
     return {
       currentPath: window.location.hash,
