@@ -1,15 +1,16 @@
 <template>
-    <HomeVue />
+    <NavbarMenu />
+    <router-view />
 </template>
 
 <script>
 
-import HomeVue from "./views/Home.vue";
+import NavbarMenu from "./components/Navbar/Navbar.vue";
 
 export default {
     name: 'App',
     components: {
-        HomeVue
+        NavbarMenu
     }
 };
 </script>
