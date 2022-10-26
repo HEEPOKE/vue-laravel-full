@@ -19,6 +19,8 @@
                     <button type="submit" class="btn btn-primary text-center col-3 my-2 mx-2">ยืนยัน</button>
                     <button class="btn btn-primary col-3" onclick="window.history.back()">ย้อนกลับ</button>
                 </div>
+                <hr />
+                <div>OR</div>
             </div>
         </div>
     </div>

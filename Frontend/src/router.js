@@ -5,6 +5,7 @@ import StoreVue from "./views/Store.vue";
 import LoginVue from "./views/auth/Login.vue";
 import RegisterVue from "./views/auth/Register.vue";
 import DashboardVue from "./views/Dashboard.vue";
+import CreateVue from "./views/Create.vue";
 import NotFound from "./errors/NotFound.vue";
 
 const routes = [
@@ -37,6 +38,11 @@ const routes = [
     path: '/register',
     name: 'RegisterVue',
     component: RegisterVue
+  },
+  {
+    path: '/create',
+    name: 'CreateVue',
+    component: CreateVue
   },
 ];
 

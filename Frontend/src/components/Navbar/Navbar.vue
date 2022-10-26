@@ -21,6 +21,17 @@
               <a class="nav-link active" aria-current="page" href="/store">Store</a>
             </router-link>
           </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Options
+          </a>
+          <ul class="dropdown-menu">
+            <router-link class="dis" to="/create">
+
+              <li><a class="dropdown-item">Create</a></li>
+            </router-link>
+          </ul>
+        </li>
           </ul>
           <form class="d-flex mx-3" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
