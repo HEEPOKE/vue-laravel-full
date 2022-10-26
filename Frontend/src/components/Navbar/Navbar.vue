@@ -2,8 +2,8 @@
   <div class="">
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <router-link to="/">
-          <a class="navbar-brand dis">Topic</a>
+        <router-link class="dis" to="/">
+          <a class="navbar-brand">Topic</a>
         </router-link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
           aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,13 +12,15 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <router-link to="/">
+              <router-link class="dis" to="/">
                 <a class="nav-link active" aria-current="page">Home</a>
               </router-link>
             </li>
             <li class="nav-item">
+            <router-link class="dis" to="/">
               <a class="nav-link active" aria-current="page" href="/store">Store</a>
-            </li>
+            </router-link>
+          </li>
           </ul>
           <form class="d-flex mx-3" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -29,12 +31,12 @@
           <nav>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <router-link to="/login">
+                <router-link class="dis" to="/login">
                   <a class="nav-link active" aria-current="page">Login</a>
                 </router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/register">
+                <router-link class="dis" to="/register">
                   <a class="nav-link active" aria-current="page">Register</a>
                 </router-link>
               </li>
