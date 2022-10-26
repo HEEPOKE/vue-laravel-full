@@ -1,8 +1,14 @@
 <template>
-    <div></div>
+  <NavbarMenu />
+  <div class="text-center">Store</div>
 </template>
 <script>
+import NavbarMenu from "../components/Navbar/Navbar.vue";
+
 export default {
-    name: 'AboutVue',
+  name: "AboutVue",
+  components: {
+    NavbarMenu,
+  },
 };
 </script>

@@ -3,7 +3,7 @@
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-light">
       <div class="container-fluid">
         <router-link to="/">
-          <a class="navbar-brand">Topic</a>
+          <a class="navbar-brand dis">Topic</a>
         </router-link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
           aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
