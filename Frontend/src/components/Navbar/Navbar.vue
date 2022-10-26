@@ -17,7 +17,7 @@
               </router-link>
             </li>
             <li class="nav-item">
-            <router-link class="dis" to="/">
+            <router-link class="dis" to="/store">
               <a class="nav-link active" aria-current="page" href="/store">Store</a>
             </router-link>
           </li>
