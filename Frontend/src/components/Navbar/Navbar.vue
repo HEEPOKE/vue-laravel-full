@@ -5,8 +5,15 @@
         <router-link class="dis" to="/">
           <a class="navbar-brand">Topic</a>
         </router-link>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-          aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarToggler">
@@ -17,24 +24,40 @@
               </router-link>
             </li>
             <li class="nav-item">
-            <router-link class="dis" to="/store">
-              <a class="nav-link active" aria-current="page" href="/store">Store</a>
-            </router-link>
-          </li>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Options
-          </a>
-          <ul class="dropdown-menu">
-            <router-link class="dis" to="/create">
+              <router-link class="dis" to="/store">
+                <a class="nav-link active" aria-current="page">Store</a>
+              </router-link>
+            </li>
 
-              <li><a class="dropdown-item">Create</a></li>
-            </router-link>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Options
+              </a>
+              <ul class="dropdown-menu">
+                <router-link class="dis" to="/create">
+                  <li><a class="dropdown-item">Create</a></li>
+                </router-link>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <router-link class="dis" to="/about">
+                <a class="nav-link active" aria-current="page">About</a>
+              </router-link>
+            </li>
           </ul>
-        </li>
-          </ul>
+
           <form class="d-flex mx-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
             <button class="btn btn-outline-success" type="submit">
               Search
             </button>
@@ -60,8 +83,7 @@
 </template>
 
 <script>
-
 export default {
-  name: 'NavbarMenu',
+  name: "NavbarMenu",
 };
 </script>

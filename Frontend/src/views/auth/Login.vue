@@ -46,7 +46,7 @@
           >
             ยืนยัน
           </button>
-          <button class="btn btn-primary col-3" onclick="window.history.back()">
+          <button class="btn btn-secondary col-3" onclick="window.history.back()">
             ยกเลิก
           </button>
         </div>
