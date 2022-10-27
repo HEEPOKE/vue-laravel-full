@@ -46,12 +46,14 @@
           <div class="text-center">OR</div>
         </div>
         <div class="container">
-            <button class="btn btn-dark col-auto">
+          <div class="row justify-content-center">
+            <button class="btn btn-dark col-auto mt-1 social fb">
               <font-awesome-icon
                 class="mx-2"
                 icon="fa-brands fa-square-facebook"
-              />Sign in Facebook
+              />Sign in with Facebook
             </button>
+          </div>
         </div>
       </div>
     </div>

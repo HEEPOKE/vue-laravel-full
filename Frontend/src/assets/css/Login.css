@@ -1,3 +1,8 @@
-.hrlog {
-    /* align-items: center !important; */
+.social {
+    align-items: center !important;
+}
+
+.fb {
+    background-color: #4267B2 !important;
+    border:#4267B2 !important;
 }
