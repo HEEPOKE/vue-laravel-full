@@ -5,21 +5,12 @@
       <div class="card-body">
         <div class="container">
           <div class="mb-3">
-            <label for="Username" class="form-label">Username</label>
+            <label for="name" class="form-label">name</label>
             <input
               type="text"
               class="form-control"
               id="Username"
               placeholder="Username"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="Email" class="form-label">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="Email"
-              placeholder="@example.com"
             />
           </div>
           <div class="mb-3">
@@ -72,11 +63,13 @@
 </template>
 <script>
 import headerVue from "./header.vue";
+import uploadVue from "./upload.vue";
 
 export default {
   name: "formVue",
   components: {
     headerVue,
+    uploadVue,
   },
 };
 </script>
