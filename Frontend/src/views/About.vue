@@ -1,6 +1,6 @@
 <template>
   <NavbarMenu />
-  <div class="text-center">Store</div>
+  <div class="text-center">About</div>
 </template>
 <script>
 import NavbarMenu from "../components/Navbar/Navbar.vue";
