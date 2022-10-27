@@ -63,13 +63,11 @@
 </template>
 <script>
 import headerVue from "./header.vue";
-import uploadVue from "./upload.vue";
 
 export default {
   name: "formVue",
   components: {
     headerVue,
-    uploadVue,
   },
 };
 </script>
