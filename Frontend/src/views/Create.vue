@@ -1,6 +1,6 @@
 <template>
   <NavbarMenu />
-  <indexVue />
+  <TablecreateVue />
 </template>
 
 <script>
