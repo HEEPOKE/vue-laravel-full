@@ -10,9 +10,9 @@
           <thead>
             <tr class="text-center">
               <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">Name</th>
+              <th scope="col">Details</th>
+              <th scope="col">expend</th>
               <th scope="col">Manage</th>
             </tr>
           </thead>
