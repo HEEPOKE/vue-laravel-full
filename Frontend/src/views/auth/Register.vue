@@ -1,5 +1,5 @@
 <template>
-  <div class="container justify-content-center mt-3">
+  <div class="container justify-content-center form-register col-6 mt-3">
     <div class="card">
       <div class="card-body text-white">
         <div>

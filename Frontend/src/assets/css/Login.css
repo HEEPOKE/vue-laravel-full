@@ -1,8 +1,19 @@
+.form-login {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+
 .social {
-    align-items: center !important;
+  align-items: center !important;
 }
 
 .fb {
-    background-color: #4267B2 !important;
-    border:#4267B2 !important;
+  background-color: #4267b2 !important;
+  border: #4267b2 !important;
+}
+
+.google {
+  background-color: #db4437 !important;
+  border: #db4437 !important;
 }

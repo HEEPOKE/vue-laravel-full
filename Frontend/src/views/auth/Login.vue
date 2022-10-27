@@ -1,5 +1,5 @@
 <template>
-  <div class="container justify-content-center col-8 mt-3">
+  <div class="container justify-content-center col-6 mt-3 form-login">
     <div class="card">
       <div class="card-body text-white">
         <div>
@@ -28,6 +28,17 @@
             minlength="8"
           />
         </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            จดจำฉัน
+          </label>
+        </div>
         <div class="text-center">
           <button
             type="submit"
@@ -41,17 +52,25 @@
         </div>
         <div class="container mt-2">
           <div class="row justify-content-center">
-            <hr class="col-6" />
+            <hr class="col-10" />
           </div>
           <div class="text-center">OR</div>
         </div>
         <div class="container">
           <div class="row justify-content-center">
-            <button class="btn btn-dark col-auto mt-1 social fb">
+            <button class="btn btn-dark col-6 mt-1 social fb">
               <font-awesome-icon
                 class="mx-2"
                 icon="fa-brands fa-square-facebook"
               />Sign in with Facebook
+            </button>
+          </div>
+        </div>
+        <div class="container mb-3">
+          <div class="row justify-content-center">
+            <button class="btn btn-dark col-6 mt-1 social google">
+              <font-awesome-icon class="mx-2" icon="fa-brands fa-google" />
+              Sign in with Google
             </button>
           </div>
         </div>
