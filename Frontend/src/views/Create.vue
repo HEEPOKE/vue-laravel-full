@@ -5,13 +5,13 @@
 
 <script>
 import NavbarMenu from "../components/Navbar/Navbar.vue";
-import indexVue from "../components/create/index.vue";
+import TableVue from "../components/create/Table.vue";
 
 export default {
   name: "CreateVue",
   components: {
     NavbarMenu,
-    indexVue,
+    TableVue,
   },
 };
 </script>
