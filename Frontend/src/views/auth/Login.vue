@@ -1,5 +1,5 @@
 <template>
-  <div class="container justify-content-center mt-3">
+  <div class="container justify-content-center col-8 mt-3">
     <div class="card">
       <div class="card-body text-white">
         <div>
@@ -13,6 +13,7 @@
             type="text"
             class="form-control"
             id="Username"
+            name="Username"
             placeholder="Username"
           />
         </div>
@@ -22,6 +23,7 @@
             type="password"
             class="form-control"
             id="Password"
+            name="Password"
             placeholder="password"
             minlength="8"
           />
@@ -34,11 +36,23 @@
             ยืนยัน
           </button>
           <button class="btn btn-primary col-3" onclick="window.history.back()">
-            ย้อนกลับ
+            ยกเลิก
           </button>
         </div>
-        <hr />
-        <div>OR</div>
+        <div class="container mt-2">
+          <div class="row justify-content-center">
+            <hr class="col-6" />
+          </div>
+          <div class="text-center">OR</div>
+        </div>
+        <div class="container">
+            <button class="btn btn-dark col-auto">
+              <font-awesome-icon
+                class="mx-2"
+                icon="fa-brands fa-square-facebook"
+              />Sign in Facebook
+            </button>
+        </div>
       </div>
     </div>
   </div>
