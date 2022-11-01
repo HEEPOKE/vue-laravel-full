@@ -6,7 +6,7 @@ import LoginVue from "./views/auth/Login.vue";
 import RegisterVue from "./views/auth/Register.vue";
 import DashboardVue from "./views/Dashboard.vue";
 import CreateVue from "./views/Create.vue";
-import NotFound from "./errors/NotFound.vue";
+// import NotFound from "./errors/NotFound.vue";
 
 const routes = [
   {
